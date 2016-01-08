@@ -115,19 +115,27 @@ dd {
     min-height: 130px;
     margin-top: -15px;
 }
-#leftnavigation ul {
+.leftnavigationparent {
     list-style-type: none;
     padding: 0;
     margin: 10px -10px -10px -10px;
     font-weight: bold;
 }
-#leftnavigation a {
+.leftnavigationchild {
+    list-style-type: none;
+    padding: 0;
+}
+.leftnavigationparent a {
     text-decoration: none;
     font-size: 1.2em;
     padding: 20px;
     display: block;
     background-color: #cccccc;
     border-bottom: 2px solid #ffcc00;
+}
+.leftnavigationchild a {
+    font-size: 0.8em;
+    text-indent: 30px;
 }
 #socialmedia {
     list-style-type: none;
