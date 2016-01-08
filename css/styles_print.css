@@ -1,0 +1,141 @@
+/* Legacy browser support */
+header, nav, main, footer, aside {
+    display: block;
+}
+/* Define body */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Lucida Sans Unicode", Verdana, Geneva, sans-serif;
+}
+/* Define layout */
+#container {
+    margin-left: auto;
+    margin-right: auto;
+}
+#leftnavigation {
+    display: none;
+}
+#bottomnavigation {
+    display: none;
+}
+aside {
+    display: none;
+}
+/* Define header */
+header {
+    min-height: 100px;
+}
+/* Define logo */
+#logo {
+    width: 290px;
+    height: 100px;
+    position: absolute;
+}
+#logobackground {
+    width: 285px;
+    height: 95px;
+    position: absolute;
+    text-align: center;
+    padding: 0;
+    border-bottom: 5px solid #333333;
+    border-right: 5px solid #333333;
+}
+#logoshape {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    border: 1px solid #333333;
+    border-radius: 5px 30px;
+    margin: 5px;
+}
+#logotext {
+    width: 285px;
+    height: 95px;
+    position: absolute;
+}
+#logotext h1 {
+    padding-left: 40px;
+    color: #333333;
+    border-bottom: none;
+    font-size: 1.7em;
+}
+/* Define images */
+figure {
+    display: none;
+}
+/* Define headings */
+h1 {
+    text-align: center;
+    color: #333333;
+    border-bottom: 5px solid #333333;
+    padding-bottom: 5px;
+}
+h2, h3, h4, h5, h6 {
+    color: #333333;
+    border-left: 5px solid #333333;
+    padding-left: 5px;
+}
+/* Define paragraph styles */
+main p {
+    font-size: 1.2em;
+}
+/* Define list styles */
+.listparent {
+    font-size: 1.2em;
+}
+dt {
+    font-style: italic;
+    font-size: 1.5em;
+    page-break-after: avoid;
+}
+dd {
+    margin-top: -15px;
+    font-size: 1.2em; 
+    page-break-inside: avoid;
+}
+/* Define tables */
+.degreeschedule {
+    width: 90%;
+    margin: auto;
+    border: 5px solid #333333;
+    border-spacing: 0
+}
+.degreeschedule caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+}
+.degreeschedule td, th {
+    border: 1px solid #333333;
+    padding: 0.5em;
+}
+.degreeschedule tbody td {
+    text-align: center;
+}
+.degreeschedule tbody td:first-of-type {
+    text-align: left;
+}
+.degreeschedule tfoot {
+    font-weight: bold;
+}
+/* Define footer */
+footer {
+    text-align: right;
+    clear: both;
+    border-right: 5px solid #333333;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+#contact {
+    text-align: right;
+}
+#contact h1 {
+    border: none;
+    text-align: right;
+    font-size: 1.2em;
+}
+#contactdetails {
+    line-height: 200%;
+    list-style-type: none;
+}
