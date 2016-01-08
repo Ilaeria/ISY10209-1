@@ -1,0 +1,211 @@
+/* Legacy browser support */
+header, nav, main, footer, aside {
+    display: block;
+}
+/* Define body */
+body {
+    background-color: #fcfcfc;
+    color: #333333;
+    font-family: "Lucida Sans Unicode", Verdana, Geneva, sans-serif;
+    overflow-y: scroll;
+}
+/* Define layout */
+#container {
+    min-width: 960px;
+    background-color: #cccccc;
+    margin-left: auto;
+    margin-right: auto;
+}
+#leftnavigation {
+    float: left;
+    width: 270px;
+    padding: 10px;
+}
+#bottomnavigation {
+    text-align: center;
+    margin-right: -20px;
+    font-size: 0.8em;
+}
+aside {
+    float: right;
+    width: 270px;
+    text-align: right;
+    padding: 10px;
+}
+main {
+    margin: 0 290px;
+    padding: 10px 20px;
+    background-color: #fcfcfc;
+    min-height: 1000px;
+}
+/* Define header */
+header {
+    background-color: #333333;
+    min-height: 100px;
+}
+/* Define logo */
+#logo {
+    width: 290px;
+    height: 100px;
+    position: absolute;
+}
+#logobackground {
+    width: 285px;
+    height: 95px;
+    position: absolute;
+    text-align: center;
+    background-color: #fcfcfc;
+    padding: 0;
+    border-bottom: 5px solid #ffcc00;
+    border-right: 5px solid #ffcc00;
+}
+#logoshape {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    background-color: #ffcc00;
+    border-radius: 5px 30px;
+    margin: 5px;
+}
+#logotext {
+    width: 285px;
+    height: 95px;
+    position: absolute;
+}
+#logotext h1 {
+    padding-left: 40px;
+    color: #333333;
+    border-bottom: none;
+    font-size: 1.7em;
+}
+/* Define images */
+#leftnavigation img {
+    padding: 30px 10px 10px 10px;
+}
+figcaption a {
+    float:right;
+    margin-top: -15px;
+    margin-left: 15px;
+    text-align: center;
+}
+/* Define headings */
+h1 {
+    text-align: center;
+    color: #333333;
+    border-bottom: 5px solid #ffcc00;
+    padding-bottom: 5px;
+}
+h2, h3, h4, h5, h6 {
+    color: #333333;
+    border-left: 5px solid #ffcc00;
+    padding-left: 5px;
+}
+aside h3 {
+    border-left: none;
+    padding-left: 0;
+    border-right: 5px solid #ffcc00;
+    padding-right: 5px;
+}
+/* Define list styles */
+dt {
+    font-style: italic;
+    font-size: 1.2em;
+}
+dd {
+    min-height: 130px;
+    margin-top: -15px;
+}
+#leftnavigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px -10px -10px -10px;
+    font-weight: bold;
+}
+#leftnavigation a {
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 20px;
+    display: block;
+    background-color: #cccccc;
+    border-bottom: 2px solid #ffcc00;
+}
+#socialmedia {
+    list-style-type: none;
+    margin: 0 -10px;
+    padding: 0;
+}
+#socialmedia a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    background-color: #cccccc;
+    border-bottom: 1px solid #ffcc00;
+}
+#leftnavigation a:link, #socialmedia a:link {
+    color: #666666;
+}
+#leftnavigation a:visited, #socialmedia a:visited {
+    color: #333333;
+}
+#leftnavigation a:hover, #socialmedia a:hover {
+    background-color: #ffcc00;
+    color: #333333;
+}
+/* Define tables */
+.degreeschedule {
+    width: 90%;
+    margin: auto;
+    border: 5px solid #ffcc00;
+    border-spacing: 0
+}
+.degreeschedule caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+}
+.degreeschedule th {
+    border-style: none;
+    padding: 0.5em;
+}
+.degreeschedule tbody td {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #ffcc00;
+    border-spacing: 0;
+    text-align: center;
+}
+.degreeschedule tbody td:first-of-type {
+    text-align: left;
+}
+.degreeschedule tbody tr:nth-of-type(even) {
+    background-color: #cccccc;
+}
+.degreeschedule thead {
+    background-color: #ffcc00;
+}
+.degreeschedule tfoot {
+    font-weight: bold;
+}
+.degreeschedule tfoot td {
+    border-top: 3px solid #ffcc00;
+}
+/* Define footer */
+footer {
+    text-align: right;
+    clear: both;
+    border-right: 5px solid #ffcc00;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+#contact {
+    text-align: right;
+}
+#contact h1 {
+    border: none;
+    text-align: right;
+    font-size: 1.2em;
+}
+#contactdetails {
+    line-height: 200%;
+    list-style-type: none;
+}
