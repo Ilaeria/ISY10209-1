@@ -111,7 +111,7 @@ dt {
     font-style: italic;
     font-size: 1.2em;
 }
-dd {
+#petlist dd {
     min-height: 130px;
     margin-top: -15px;
 }
