@@ -38,36 +38,6 @@ main {
     background-color: #fcfcfc;
     min-height: 1000px;	
 }
-/* Define grid */
-#skillsgrid {
-    margin: auto;
-    width: 620px;
-    height: 1000px;
-}
-#skillscolumn1 {
-    width: 50%;
-    float: left;
-    margin: 0;
-    padding: 0;
-} 
-#skillscolumn2 {
-    width: 50%;
-    float: right;
-    margin: 0;
-    padding: 0;
-}
-.skillcard {
-    margin: 0;
-    padding: 0;
-}
-.skillcard img {
-    width: 280px;
-    margin: 10px;
-    padding: 0;
-}
-.skillcard figcaption {
-    text-align: center;
-}
 /* Define header */
 header {
     background-color: #333333;
@@ -165,6 +135,7 @@ dt {
 }
 .leftnavigationchild a {
     font-size: 0.8em;
+    font-family: "Lucida Console", "Andale Mono", monospace;
     text-indent: 30px;
 }
 #socialmedia {
@@ -266,6 +237,41 @@ input[type=radio], input[type=checkbox] {
     display: inline;
 }
 
+/* Define grid */
+#skillsgrid {
+    margin: auto;
+    width: 620px;
+    height: 1000px;
+}
+#skillscolumn1 {
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 0;
+} 
+#skillscolumn2 {
+    width: 50%;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.skillcard {
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+.skillcard img {
+    width: 256px;
+    height: 256px;
+    margin: 10px 22px;
+    padding: 0;
+}
+.skillcard figcaption {
+    text-align: center;
+    font-family: "Lucida Console", "Andale Mono", monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 /* Define footer */
 footer {
     text-align: right;
@@ -285,4 +291,8 @@ footer {
 #contactdetails {
     line-height: 200%;
     list-style-type: none;
+}
+.copyrightnotice {
+    font-size: 0.8em;
+    margin: 0.5em 0;
 }
