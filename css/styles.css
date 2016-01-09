@@ -197,6 +197,46 @@ dd {
 .degreeschedule tfoot td {
     border-top: 3px solid #ffcc00;
 }
+
+/* Define form */
+form {
+    font-family: "Lucida Console", "Andale Mono", monospace;
+    background-color: #f3f3f3;
+    padding: 10px;
+}
+label {
+    float: left;
+    width: 150px;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+input {
+    margin-top: 10px;
+    display: block;
+}
+textarea {
+    margin-top: 20px;
+    display: block;
+}
+fieldset {
+    margin: 10px 0 10px 160px;
+    border-style: none;
+    width: 419px;
+    padding-top: 10px;
+}
+input[type=radio], input[type=checkbox] {
+    display: inline;
+}
+#submit {
+    margin-left: 160px;
+    display: inline;
+}
+#reset {
+    margin-left: 10px;
+    display: inline;
+}
+
 /* Define footer */
 footer {
     text-align: right;

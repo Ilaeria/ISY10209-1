@@ -35,32 +35,60 @@
                 </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <img src="images/headshot.jpg" height="250" width="250" alt="Headshot of Jennifer Doherty">
         </nav> <!-- Close navigation -->
-        <aside>
-            <h3>Social Media</h3>
-            <!-- Twitter widget -->
-            <a class="twitter-timeline" href="https://twitter.com/Ilaeria" data-widget-id="673006547803312128">
-                Tweets by @Ilaeria
-            </a>
-            <script>
-                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-            </script>
-            <!-- End Twitter widget -->
-            <ul id="socialmedia">    
-                <li><a href="http://ilaeria.blogspot.com.au/" target="_blank">Blog</a></li>
-                <li><a href="https://twitter.com/ilaeria" target="_blank">Twitter</a></li>
-                <li><a href="https://www.instagram.com/ilaeria/" target="_blank">Instagram</a></li>
-            </ul>
-        </aside> <!-- Close sidebar -->
-        <main>
+        <main style="margin-right:0">
             <h1>Skills: Web Development - Example</h1>
-                <p>
-                    This is a placeholder page which will in future include an example of my web development skills.
-                </p>
-                <p>
-                    <a href="skillsweb.html">Back to Web Development skills</a>
-                </p>
+                <h2>King's Music Store - Newsletter Signup</h2>
+                    <form name="newslettersignup" method="post" id="newslettersignup" action="http://infotech.scu.edu.au/cgi-bin/echo_form">
+                        <p>
+                            Welcome to King's Music Store and thanks for your interest in our regular newsletter! 
+                        </p>
+                        <p>
+                            To sign up, we need your first name, last name, and email address.
+                        </p>
+                        <br>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" maxlength="60">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" maxlength="60">
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="email" maxlength="60">
+                        <br>
+                        <p>
+                            If you tell us a little more about yourself, we can tailor the newsletter just for you.
+                        </p>
+                        <label for="fieldsetage">Age:</label>
+                        <fieldset id="fieldsetage">
+                            How old are you? Choose one answer only.<br>
+                            <input type="radio" name="ageGroup" id="ageGroup1" value="15-25"> 15-25<br>
+                            <input type="radio" name="ageGroup" id="ageGroup2" value="26-35"> 26-35<br>
+                            <input type="radio" name="ageGroup" id="ageGroup3" value="36-45"> 36-45<br>
+                            <input type="radio" name="ageGroup" id="ageGroup4" value="46-55"> 46-55<br>
+                            <input type="radio" name="ageGroup" id="ageGroup5" value="55+"> 55+<br>
+                        </fieldset>
+                        <label for="fieldsetmusic">Musical Tastes:</label>
+                        <fieldset id="fieldsetmusic">
+                            What sort of music do you like? Choose all answers that apply.<br>
+                            <input type="checkbox" name="musicMetal" id="musicMetal" value="yes"> Heavy Metal<br>
+                            <input type="checkbox" name="musicCountry" id="musicCountry" value="yes"> Country and Western<br>
+                            <input type="checkbox" name="musicClassical" id="musicClassical" value="yes"> Classical<br>
+                            <input type="checkbox" name="musicRock" id="musicRock" value="yes"> Rock & Roll<br>
+                            <input type="checkbox" name="musicPop" id="musicPop" value="yes"> Pop<br>
+                            <input type="checkbox" name="musicFolk" id="musicFolk" value="yes"> Folk<br>
+                            <input type="checkbox" name="musicBlues" id="musicBlues" value="yes"> Blues<br>
+                            <input type="checkbox" name="musicJazz" id="musicJazz" value="yes"> Jazz<br>
+                            <input type="checkbox" name="musicDisco" id="musicDisco" value="yes"> Disco<br>
+                            <input type="checkbox" name="musicOpera" id="musicOpera" value="yes"> Opera<br>
+                        </fieldset>
+                        <label for="comments">Comments:</label>
+                        <textarea name="comments" id="comments" cols="60" rows="3">Please enter any further musical tastes or comments here.
+                        </textarea>
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                        <input type="reset" name="reset" id="reset" value="Reset">
+                    </form>
+                    <p>
+                        <a href="skillsweb.html">Back to Web Development skills</a>
+                    </p>
         </main> <!-- Close main content -->
         <footer>
             <nav id="bottomnavigation"> <!-- Bottom navigation -->
