@@ -5,8 +5,28 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen">
     <link rel="stylesheet" href="css/styles_print.css" media="print">
+    <script type="text/javascript">
+        function validateForm() {
+         if (document.forms[0].firstName.value == "" ) {
+            alert("First Name field cannot be empty.");
+            return false;
+         } // end if
+	  
+         if (document.forms[0].lastName.value == "" ) {
+            alert("Last Name field cannot be empty.");
+            return false;
+         } // end if
+         
+         if (document.forms[0].email.value == "" ) {
+            alert("Email field cannot be empty.");
+            return false;
+         } // end if
+         
+         return true;
+      } // end function validateForm
+    </script>
 </head>
-<body>
+<body onload="alert('Welcome to the Kings Music Store - Newsletter Signup');">
     <div id="container">
         <header>
             <div id="logo">
@@ -38,10 +58,10 @@
         </nav> <!-- Close navigation -->
         <main style="margin-right:0">
             <h1>Skills: Web Development - Example</h1>
-                <h2>King's Music Store - Newsletter Signup</h2>
-                    <form name="newslettersignup" method="post" id="newslettersignup" action="http://infotech.scu.edu.au/cgi-bin/echo_form">
+                <h2>Kings Music Store - Newsletter Signup</h2>
+                    <form name="newslettersignup" method="post" id="newslettersignup" action="http://infotech.scu.edu.au/cgi-bin/echo_form" onsubmit="return validateForm();">
                         <p>
-                            Welcome to King's Music Store and thanks for your interest in our regular newsletter! 
+                            Welcome to Kings Music Store and thanks for your interest in our regular newsletter! 
                         </p>
                         <p>
                             To sign up, we need your first name, last name, and email address.
@@ -87,14 +107,14 @@
                         <input type="reset" name="reset" id="reset" value="Reset">
                     </form>
                     <p>
-                        <a href="skillsweb.html">Back to Web Development skills</a>
+                        <a href="skillsweb.html">&larr; Back to Web Development skills</a>
                     </p>
         </main> <!-- Close main content -->
         <footer>
             <nav id="bottomnavigation"> <!-- Bottom navigation -->
                 <a href="index.html">Home</a> | 
                 <a href="resume.html">Resume</a> | 
-                <a href="skills.html">Skills &#9660;</a> |
+                <a href="skills.html">Skills &#9660; </a> |
                 <a href="contact.html">Contact</a><br>
                 <a href="skillsweb.html">Web Development</a> |
                 <a href="skillsprojects.html">Project Management</a> |
