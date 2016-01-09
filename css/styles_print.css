@@ -89,34 +89,34 @@ dt {
     font-size: 1.5em;
     page-break-after: avoid;
 }
-dd {
+#petlist dd {
     margin-top: -15px;
     font-size: 1.2em; 
     page-break-inside: avoid;
 }
 /* Define tables */
-.degreeschedule {
+.stripedtable {
     width: 90%;
     margin: auto;
     border: 5px solid #333333;
     border-spacing: 0
 }
-.degreeschedule caption {
+.stripedtable caption {
     font-weight: bold;
     font-size: 1.2em;
     padding-bottom: 0.5em;
 }
-.degreeschedule td, th {
+.stripedtable td, th {
     border: 1px solid #333333;
     padding: 0.5em;
 }
-.degreeschedule tbody td {
+.stripedtable tbody td {
     text-align: center;
 }
-.degreeschedule tbody td:first-of-type {
+.stripedtable tbody td:first-of-type {
     text-align: left;
 }
-.degreeschedule tfoot {
+.stripedtable tfoot {
     font-weight: bold;
 }
 /* Define footer */

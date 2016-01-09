@@ -160,41 +160,40 @@ dt {
     color: #333333;
 }
 /* Define tables */
-.degreeschedule {
+.stripedtable {
     width: 90%;
     margin: auto;
     border: 5px solid #ffcc00;
     border-spacing: 0
 }
-.degreeschedule caption {
+.stripedtable caption {
     font-weight: bold;
     font-size: 1.2em;
     padding-bottom: 0.5em;
 }
-.degreeschedule th {
+.stripedtable th {
     border-style: none;
     padding: 0.5em;
 }
-.degreeschedule tbody td {
+.stripedtable tbody td {
     border-width: 0 1px;
     border-style: solid;
     border-color: #ffcc00;
     border-spacing: 0;
+}
+.stripedtable tbody td:last-of-type {
     text-align: center;
 }
-.degreeschedule tbody td:first-of-type {
-    text-align: left;
-}
-.degreeschedule tbody tr:nth-of-type(even) {
+.stripedtable tbody tr:nth-of-type(even) {
     background-color: #cccccc;
 }
-.degreeschedule thead {
+.stripedtable thead {
     background-color: #ffcc00;
 }
-.degreeschedule tfoot {
+.stripedtable tfoot {
     font-weight: bold;
 }
-.degreeschedule tfoot td {
+.stripedtable tfoot td {
     border-top: 3px solid #ffcc00;
 }
 
