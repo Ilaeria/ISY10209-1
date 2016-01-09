@@ -36,22 +36,23 @@ main {
     margin: 0 290px;
     padding: 10px 20px;
     background-color: #fcfcfc;
-    min-height: 1100px;
+    min-height: 1000px;	
 }
 /* Define grid */
 #skillsgrid {
     margin: auto;
     width: 620px;
+    height: 1000px;
 }
 #skillscolumn1 {
-    width: 300px;
+    width: 50%;
     float: left;
     margin: 0;
     padding: 0;
 } 
 #skillscolumn2 {
-    width: 300px;
-    float: left;
+    width: 50%;
+    float: right;
     margin: 0;
     padding: 0;
 }
