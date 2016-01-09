@@ -36,7 +36,36 @@ main {
     margin: 0 290px;
     padding: 10px 20px;
     background-color: #fcfcfc;
-    min-height: 1000px;
+    min-height: 1100px;
+}
+/* Define grid */
+#skillsgrid {
+    margin: auto;
+    width: 620px;
+}
+#skillscolumn1 {
+    width: 300px;
+    float: left;
+    margin: 0;
+    padding: 0;
+} 
+#skillscolumn2 {
+    width: 300px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.skillcard {
+    margin: 0;
+    padding: 0;
+}
+.skillcard img {
+    width: 280px;
+    margin: 10px;
+    padding: 0;
+}
+.skillcard figcaption {
+    text-align: center;
 }
 /* Define header */
 header {
