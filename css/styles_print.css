@@ -9,7 +9,7 @@ body {
     font-family: "Lucida Sans Unicode", Verdana, Geneva, sans-serif;
 }
 /* Define layout */
-#container {
+#container, #widecontainer {
     margin-left: auto;
     margin-right: auto;
 }
@@ -60,8 +60,23 @@ header {
     border-bottom: none;
     font-size: 1.7em;
 }
-/* Define images */
+/* Define images and videos */
 figure {
+    display: none;
+}
+.skillexample {
+    display: initial;
+    width: 611px;
+    margin: 0 auto;
+}
+.skillexample img {
+    width: 611px;
+    height: 369px;
+}
+.skillexample figcaption {
+    text-align: left;
+}
+.youtubevideo {
     display: none;
 }
 /* Define headings */
@@ -89,8 +104,7 @@ dt {
     font-size: 1.5em;
     page-break-after: avoid;
 }
-#petlist dd {
-    margin-top: -15px;
+dd {
     font-size: 1.2em; 
     page-break-inside: avoid;
 }
@@ -119,6 +133,90 @@ dt {
 .stripedtable tfoot {
     font-weight: bold;
 }
+.contacttable {
+    width: 90%;
+    margin-left: 0;
+    border-left: 5px solid #333333;
+}
+.contacttable caption {
+    text-align: left;
+    padding-bottom: 1em;
+}
+.contacttable th {
+    display: none;
+}
+/* Define form */
+form {
+    font-family: "Lucida Console", "Andale Mono", monospace;
+    padding: 10px;
+}
+label {
+    float: left;
+    width: 150px;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+input {
+    margin-top: 10px;
+    display: block;
+}
+textarea {
+    margin-top: 20px;
+    display: block;
+}
+fieldset {
+    margin: 10px 0 10px 160px;
+    border-style: none;
+    width: 419px;
+    padding-top: 10px;
+}
+input[type=radio], input[type=checkbox] {
+    display: inline;
+}
+#submit {
+    margin-left: 160px;
+    display: inline;
+}
+#reset {
+    margin-left: 10px;
+    display: inline;
+}
+.backlink {
+    display: none;
+}
+/* Define grid */
+#skillsgrid {
+    margin: auto;
+}
+#skillscolumn1, #skillscolumn2 {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+} 
+#skillscolumn1 {
+    float: left;
+}
+#skillscolumn2 {
+    float: right;
+}
+.skillcard {
+    display: initial;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+.skillcard img {
+    width: 256px;
+    height: 256px;
+    margin: 10px 22px;
+    padding: 0;
+}
+.skillcard figcaption {
+    text-align: center;
+    font-family: "Lucida Console", "Andale Mono", monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+}
 /* Define footer */
 footer {
     text-align: right;
@@ -126,9 +224,6 @@ footer {
     border-right: 5px solid #333333;
     padding-right: 5px;
     margin-right: 10px;
-}
-#contact {
-    text-align: right;
 }
 #contact h1 {
     border: none;
@@ -138,4 +233,8 @@ footer {
 #contactdetails {
     line-height: 200%;
     list-style-type: none;
+}
+.copyrightnotice {
+    font-size: 0.8em;
+    margin: 0.5em 0;
 }
