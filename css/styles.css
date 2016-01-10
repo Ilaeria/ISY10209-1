@@ -10,11 +10,16 @@ body {
     overflow-y: scroll;
 }
 /* Define layout */
-#container {
-    min-width: 960px;
+#container, #widecontainer {
     background-color: #cccccc;
     margin-left: auto;
     margin-right: auto;
+}
+#container {
+    min-width: 960px;
+}
+#widecontainer {
+    min-width: 1240px;
 }
 #leftnavigation {
     float: left;
@@ -78,15 +83,32 @@ header {
     border-bottom: none;
     font-size: 1.7em;
 }
-/* Define images */
+/* Define images and videos */
 #leftnavigation img {
-    padding: 30px 10px 10px 10px;
+    padding: 30px 7px 0 7px;
+    margin: auto;
+    height: 256px;
+    width: 256px;
 }
 figcaption a {
     float:right;
     margin-top: -15px;
     margin-left: 15px;
     text-align: center;
+}
+.skillexample {
+    width: 611px;
+    margin: 0 auto;
+}
+.skillexample img {
+    width: 611px;
+    height: 369px;
+}
+.skillexample figcaption {
+    text-align: center;
+}
+.youtubevideo {
+    border-style: none;
 }
 /* Define headings */
 h1 {
@@ -197,7 +219,25 @@ dt {
 .stripedtable tfoot td {
     border-top: 3px solid #ffcc00;
 }
-
+.contacttable {
+    width: 90%;
+    margin-left: 0;
+    border-left: 5px solid #ffcc00;
+}
+.contacttable caption {
+    text-align: left;
+    padding-bottom: 1em;
+}
+.contacttable th {
+    display: none;
+}
+.contacttable tbody td:first-of-type {
+    padding: 1px 5px;
+    width: 83px;
+}
+.contacttable tbody td:last-of-type {
+    font-size: 0.8em;
+}
 /* Define form */
 form {
     font-family: "Lucida Console", "Andale Mono", monospace;
@@ -236,24 +276,22 @@ input[type=radio], input[type=checkbox] {
     margin-left: 10px;
     display: inline;
 }
-
 /* Define grid */
 #skillsgrid {
     margin: auto;
     width: 620px;
     height: 1000px;
 }
-#skillscolumn1 {
+#skillscolumn1, #skillscolumn2 {
     width: 50%;
-    float: left;
     margin: 0;
     padding: 0;
 } 
+#skillscolumn1 {
+    float: left;
+}
 #skillscolumn2 {
-    width: 50%;
     float: right;
-    margin: 0;
-    padding: 0;
 }
 .skillcard {
     margin: 0 0 30px 0;
@@ -271,7 +309,6 @@ input[type=radio], input[type=checkbox] {
     font-size: 1.2em;
     font-weight: bold;
 }
-
 /* Define footer */
 footer {
     text-align: right;
@@ -279,9 +316,6 @@ footer {
     border-right: 5px solid #ffcc00;
     padding-right: 5px;
     margin-right: 10px;
-}
-#contact {
-    text-align: right;
 }
 #contact h1 {
     border: none;
